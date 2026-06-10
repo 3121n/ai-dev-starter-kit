@@ -1,0 +1,27 @@
+# Netlify build configuration.
+# This file prevents the most common "works locally, fails on deploy" issues.
+
+[build]
+  # The folder Netlify publishes. The starter site is plain HTML in /starter-site.
+  # Change this to your build output (e.g. "dist" or "build") when you add a framework.
+  publish = "starter-site"
+
+  # No build step for the plain-HTML starter. Replace with your build command
+  # (e.g. "npm run build") when you add one.
+  command = ""
+
+[build.environment]
+  # Pin the Node version so local and cloud match. This is the single biggest
+  # cause of deploys that fail only in the cloud. Keep this in sync with .nvmrc.
+  NODE_VERSION = "20"
+
+# Don't let warnings get treated as fatal errors during build.
+# (Netlify sets CI=true, which makes some toolchains fail on warnings.)
+[build.processing]
+  skip_processing = false
+
+# SPA-friendly fallback — harmless for the static starter, useful once you add routing.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

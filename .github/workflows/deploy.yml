@@ -1,0 +1,44 @@
+name: Deploy to Netlify
+
+# Auto-deploys to Netlify on every push to main.
+#
+# SETUP (one time): add two repository secrets under
+# Settings → Secrets and variables → Actions:
+#   NETLIFY_AUTH_TOKEN  — from app.netlify.com → User settings → Applications → New access token
+#   NETLIFY_SITE_ID     — from your site → Site configuration → Site information → Site ID
+#
+# Note: the easiest path is to connect the repo directly in the Netlify UI,
+# which auto-deploys with zero secrets. This Action is here for when you want
+# deploys to run from CI (e.g. after tests pass). Delete it if you use the UI link.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+
+      # Uncomment when you add a build step:
+      # - name: Install
+      #   run: npm ci
+      # - name: Build
+      #   run: npm run build
+
+      - name: Deploy to Netlify
+        if: ${{ env.NETLIFY_AUTH_TOKEN != '' && env.NETLIFY_SITE_ID != '' }}
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          npm install -g netlify-cli
+          netlify deploy --prod --dir=starter-site --site="$NETLIFY_SITE_ID" --auth="$NETLIFY_AUTH_TOKEN"
