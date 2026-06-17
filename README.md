@@ -6,7 +6,7 @@
 
 **Notion · GitHub · Netlify · Claude Code · Memory** — wired together, the way a working dev actually uses them.
 
-[**→ Get the full kit on Gumroad**](https://andersen0.gumroad.com/l/ai-dev-starter-kit) · $19 launch (reg. $39)
+[**→ Get the full kit on Gumroad**](https://andersen0.gumroad.com/l/ai-dev-starter-kit) · $29 launch (reg. $49)
 
 </div>
 
@@ -55,7 +55,7 @@ This is new and I'm looking for distributors who genuinely believe in it. **40% 
 
 <div align="center">
 
-[**Get the kit → $19 launch**](https://andersen0.gumroad.com/l/ai-dev-starter-kit)
+[**Get the kit → $29 launch**](https://andersen0.gumroad.com/l/ai-dev-starter-kit)
 
 Beta-tester pricing. Give me honest feedback and the price stays low.
 
