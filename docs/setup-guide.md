@@ -8,7 +8,7 @@ If anything breaks, don't improvise — jump to [`troubleshooting.md`](troublesh
 
 ## Before you start — the 5 accounts
 
-You'll create these as you go. All have free tiers. **You make the accounts; the kit wires them together.** We never touch your keys — you paste them into your own `.env` and Netlify.
+You'll create these as you go. GitHub, Netlify, and Notion have free tiers that cover everything in this kit. Anthropic (Claude Code) charges per use — typical light usage costs $1-5/month. **You make the accounts; the kit wires them together.** We never touch your keys — you paste them into your own `.env` and Netlify.
 
 | # | Account | What it's for | Sign up |
 |---|---|---|---|

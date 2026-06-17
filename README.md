@@ -6,7 +6,7 @@
 
 **Notion · GitHub · Netlify · Claude Code · Memory** — wired together, the way a working dev actually uses them.
 
-[**→ Get the full kit on Gumroad**](https://GUMROAD-LINK-PLACEHOLDER) · $19 launch (reg. $39)
+[**→ Get the full kit on Gumroad**](https://andersen0.gumroad.com/l/ai-dev-starter-kit) · $19 launch (reg. $39)
 
 </div>
 
@@ -33,7 +33,7 @@ This kit is the assembled whole. The headline piece isn't a PDF — it's a **sin
 
 ## 5-step quickstart
 
-1. **Duplicate** this repo (green **"Use this template"** button) and the [Notion template](#) — two clicks.
+1. **Duplicate** this repo (green **"Use this template"** button) and the [Notion template](https://voracious-felidae-fd3.notion.site/AI-Dev-Starter-Kit-Workspace-37bf69171f8181278b52d0b2a7bf13d9) — two clicks.
 2. **Run the auth wizard** in [`docs/setup-guide.md`](docs/setup-guide.md) — it tells you exactly which accounts to create, which key goes where, and how to share your Notion page with the integration.
 3. **Paste [`templates/START-HERE.md`](templates/START-HERE.md)** into Claude Code. It wires MCP, memory, git and deploy *for you*.
 4. **Smoke test** — deploy the included hello-world site to Netlify. If it goes live, your whole chain works.
@@ -55,7 +55,7 @@ This is new and I'm looking for distributors who genuinely believe in it. **40% 
 
 <div align="center">
 
-[**Get the kit → $19 launch**](https://GUMROAD-LINK-PLACEHOLDER)
+[**Get the kit → $19 launch**](https://andersen0.gumroad.com/l/ai-dev-starter-kit)
 
 Beta-tester pricing. Give me honest feedback and the price stays low.
 
